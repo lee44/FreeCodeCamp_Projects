@@ -1,0 +1,46 @@
+body { 
+    margin-top: 60px; 
+    background:grey;
+  
+}
+.button1{
+  left:0%;
+  position:relative;
+}
+.button2{
+  left:5%;
+  position:relative;
+}
+.button3{
+  left:10%;
+  position:relative;
+}
+.button4{
+  left:15%;
+  position:relative;
+}
+.gamepic {
+  width: 240px;
+  height: 200px;
+  margin-left:17px;
+  margin-bottom:20px;
+}
+.vrectbackground
+{
+  margin:0px 350px 0px 350px;
+}
+.panel {
+    margin: 5px !important; 
+}
+.titleFont{
+  font-size:50px;
+}
+.offsetAnchors{
+  padding-top:45px;
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:1275px;
+    height:1300px;
+}

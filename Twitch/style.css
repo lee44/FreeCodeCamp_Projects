@@ -1,0 +1,13 @@
+.title{
+  font-size:50px;
+  color:white;
+  text-shadow: 4px 4px purple;
+}
+.channels{
+  font-size:20px;
+  margin-top:5px;
+}
+.voffset  { margin-top: 10px; }
+body{
+  background-image:url('http://www.bstlhj6.com/data/out/203/5457938-twitch-wallpapers.png');
+}

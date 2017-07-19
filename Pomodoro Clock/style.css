@@ -1,0 +1,40 @@
+.button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none !important;
+}
+.title{
+	font-family: "Comic Sans MS";
+	font-size: 55px;color:white;
+}
+.fontSize{
+	font-size: 25px;
+	margin:0px 0px 0px 25px;
+	color:white;
+}
+
+.time{
+	font-size: 55px;
+  position:relative;
+	left: 230px;
+	top: -150px;
+	color:white;
+}
+.wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:450px;
+}
+
+.body{
+	background-color:blue;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

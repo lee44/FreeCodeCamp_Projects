@@ -1,3 +1,3 @@
 # FreeCodeCamp Projects
 
-All of my web projects done on FreeCodeCamp
+This repo contains all of the web projects I've completed in the FreeCodeCamp course.

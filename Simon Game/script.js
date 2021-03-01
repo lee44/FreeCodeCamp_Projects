@@ -10,7 +10,7 @@ var botleftarc = document.getElementById("botleftarc");
 var ctx2 = botleftarc.getContext("2d");
 ctx2.beginPath();
 ctx2.arc(215,-20,150,.5*Math.PI,1*Math.PI);
-ctx2.strokeStyle="#ffff00"; //#ffff99
+ctx2.strokeStyle="yellow"; //#ffff99
 ctx2.lineWidth = 90;
 ctx2.stroke();
 
@@ -91,7 +91,7 @@ function botleftArc()
 {
 	userPicks = 2;
 	document.getElementById("audiotag2").play();
-	ctx2.strokeStyle="#ffff99";ctx2.stroke();
+	ctx2.strokeStyle="yellow";ctx2.stroke();
 	s = setTimeout(dark, darkTimer);
 	checkUserResponse();
 }
@@ -123,10 +123,11 @@ function lightUp()
 		switch(random[a])
 		{
 			case 0:;break;
-			case 1:ctx.strokeStyle="lime";ctx.stroke();document.getElementById("audiotag1").play();break; 
-			case 2:ctx2.strokeStyle="#ffff99";ctx2.stroke();document.getElementById("audiotag2").play();break; 
-			case 3:ctx3.strokeStyle="#ff0000";ctx3.stroke();document.getElementById("audiotag3").play();break; 
-			case 4:ctx4.strokeStyle="#66d9ff";ctx4.stroke();document.getElementById("audiotag4").play();break;
+			case 1:ctx.strokeStyle="lime";ctx.stroke();document.getElementById("audiotag1").play(); document.body.style.backgroundColor = "lime";
+				break; 
+			case 2:ctx2.strokeStyle="#ffff99";ctx2.stroke();document.getElementById("audiotag2").play();document.body.style.backgroundColor = "yellow";break; 
+			case 3:ctx3.strokeStyle="#ff0000";ctx3.stroke();document.getElementById("audiotag3").play();document.body.style.backgroundColor = "#ff0000";break; 
+			case 4:ctx4.strokeStyle="#66d9ff";ctx4.stroke();document.getElementById("audiotag4").play();document.body.style.backgroundColor = "#66d9ff";break;
 		}
 		a++;
 	}
@@ -137,11 +138,15 @@ function lightUp()
 		clearTimeout(d);
 	}
 	d = setTimeout(dark, darkTimer);
+	document.querySelector("#audiotag1").addEventListener("ended", ()=>{document.body.style.backgroundColor = "white";}, false);
+	document.querySelector("#audiotag2").addEventListener("ended", ()=>{document.body.style.backgroundColor = "white";}, false);
+	document.querySelector("#audiotag3").addEventListener("ended", ()=>{document.body.style.backgroundColor = "white";}, false);
+	document.querySelector("#audiotag4").addEventListener("ended", ()=>{document.body.style.backgroundColor = "white";}, false);
 }
 
 function dark()
 {
-	ctx.strokeStyle="limegreen"; 	ctx2.strokeStyle="#ffff00"; 	ctx3.strokeStyle="#b30000"; 
+	ctx.strokeStyle="limegreen"; 	ctx2.strokeStyle="yellow"; 	ctx3.strokeStyle="#b30000"; 
 	ctx4.strokeStyle="#33ccff"; 	ctx.stroke();  ctx2.stroke();  ctx3.stroke();  ctx4.stroke();
 }
 

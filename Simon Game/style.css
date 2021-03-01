@@ -19,7 +19,9 @@
   margin-right:auto;
   width:750px;
 	height:750px;
-	
+}
+body{
+	background-color: white;
 }
 .innercircle 
 {

@@ -1,0 +1,105 @@
+body{
+	background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	height:100vh;
+	width:100vw;
+}
+.grid_container{
+	grid-template-columns:minmax(150px,150px) minmax(150px,150px) minmax(150px,150px);
+	grid-template-rows:minmax(150px,150px) minmax(150px,150px) minmax(150px,150px);
+	background:black;
+	grid-gap:10px;
+	display:grid;
+	
+	grid-template-areas:
+		"row0_column1 row0_column2 row0_column3"
+		"row1_column1 row1_column2 row1_column3"
+		"row2_column1 row2_column2 row2_column3"	
+}
+.row0_column1{
+	background:white;
+	grid-area:row0_column1;
+}
+.row0_column2{
+	background:white;
+	grid-area:row0_column2;
+}
+.row0_column3{
+	background:white;
+	grid-area:row0_column3;
+}
+.row1_column1{
+	background:white;
+	grid-area:row1_column1;
+}
+.row1_column2{
+	background:white;
+	grid-area:row1_column2;
+}
+.row1_column3{
+	background:white;
+	grid-area:row1_column3;
+}
+.row2_column1{
+	background:white;
+	grid-area:row2_column1;
+}
+.row2_column2{
+	background:white;
+	grid-area:row2_column2;
+}
+.row2_column3{
+	background:white;
+	grid-area:row2_column3;
+}
+.xo{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+	width:100%;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 9em;
+	font-weight: bold;
+}
+button{
+	height:100%;
+	width:100%;
+	outline:0;
+	border:0;
+	background:white;
+}
+p{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-width:450px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+h1{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-width:450px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+}
+.blinking{
+	animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #000;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: #000;	}
+}

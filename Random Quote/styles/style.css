@@ -1,0 +1,78 @@
+* {
+  font-family: 'Roboto', san-serif;
+}
+
+body {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  padding: 2.5rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.container .quote-text span {
+  font-size: 3rem;
+}
+
+.container .quote-author {
+  width: 100%;
+}
+
+.container .quote-author span {
+  float: right;
+  font-size: 2rem;
+}
+
+.container .buttons {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.container .buttons a {
+  float: left;
+  padding: 1rem 1.2rem;
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.container .buttons a i {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container .buttons a:hover {
+  opacity: 0.9;
+}
+
+.container .buttons button {
+  float: right;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  font-size: 2rem;
+  padding: .5rem 1.5rem 2rem 2rem;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .buttons button:hover {
+  opacity: 0.9;
+}
+/*# sourceMappingURL=style.css.map */
